@@ -1,0 +1,5 @@
+padroes de talas - android, ios
+drawable - icones 
+5a aula - NAC (02/03)
+res - layout
+activity - ui
