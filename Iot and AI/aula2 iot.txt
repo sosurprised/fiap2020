@@ -1,0 +1,11 @@
+porta digital - high (1), low (0)
+led tem polaridade
+uma perna positiva, outra negativa
+queima aos poucos - a voltagem é menor dp que o arduino ta mandadno
+nao deixa passar muita corrente eletrica
+perninha mais comprida da led é positiva
+resitencia eletrica - transformar em calor a energia eletrica, segura uma parte da voltagem
+codigo de cores - 3 faxas(primeiras linhas verde - 5, azul - 6 = 56om, terceira linha - a quantidade de 0s - preto - nenhum zero/marrom - 1 zero)
+mais tempo ligada menos desligada - mais forte
+o contrario - mais fraca, controle pwm controle por largura de pulso (pulse-width-modulation)
+analogwrite
