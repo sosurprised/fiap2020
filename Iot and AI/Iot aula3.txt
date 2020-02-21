@@ -1,0 +1,24 @@
+configuração pullup do botão
+
+pinMode(botao, INPUT); arduino só le (led era output)
+
+digitalRead - le a porta do botao
+resitor de pullup
+quando aperta o botao tem que mudar o estado da porta, esse circuito é alimentado com polo positivo
+e o negativo
+o botao ta solto - le 1,
+apertado - 0
+sem resistor a porta fica solta, o que ela vai ler é o ruido (0 ou 1)
+trocando de input - pode deixar sem resistor
+frequencia - quantos ciclos de sobe/desce acontecem por segundo
+duty cicle - o tempo que a porta fica ligada vs desligada; não vai de 0 até 255 
+50% -127
+**interrupção**
+evento - acontecimento fisico
+só usa portas 2 e 3
+volatile - uma variável qu eoutra thread pode mudar
+change - toda mudança na porta vai desparar uma mudança de estado
+rising - quando solta 
+low - acende/apaga muito rapidamente, brilho intermediário
+modo: low, change, rising, falling   
+tinkercad.com - simulaçao arduino
