@@ -1,0 +1,29 @@
+converção de analógico para o digital - portas A0-A5
+o arduino é digital (5v)
+ele lê valores de voltagem que varia entre 0 e 5 v
+ex voltagem muda a partir da temperatura do meio-ambiente(sensor de temperatura)
+o arduino tem níveis, pega faixa de 5v e transforma em níveis, depois associando esses níveis a um valor
+número de níveis 2 elevado para a qauntidade de bits
+fotorresistor - sensor de iluminação
+LDR - light dependent resistor
+
+
+//Pino analógico em que o sensor está conectado
+const int sensor = A0;
+int led = 3;
+
+void setup(){
+Serial.begin(9600);
+pinMode(led, OUTPUT);
+}
+void loop(){
+//Lendo o valor do sensor.
+int valorSensor = analogRead(sensor);
+int valorLed = map(valorSensor, 0, 1023, 255, 0);
+analogRead(led);
+analogWrite(led, valorLed); 
+//Exibindo o valor do sensor no serial monitor.
+Serial.println(valorSensor);
+Serial.println(valorLed);
+delay(500);
+}
